@@ -3,7 +3,7 @@
 }
 
 body {
-  background: #000;
+  background: #171B1A;
   padding: 0px;
   margin: 0px;
   font-family: 'Poppins', sans-serif;
@@ -17,9 +17,8 @@ header {
 
 .page {
   background: #fff;
-  border-left: 20px solid #000;
-  border-right: 20px solid #000;
-  padding-top: 300px;
+  border-left: 20px solid #171B1A;
+  border-right: 20px solid #171B1A;
 }
 
 .vertical-center {
@@ -33,44 +32,31 @@ header {
   width: 100%;
 }
 
-h1 {
-  margin-top: -120px;
-}
-
 footer {
   padding: 100px 0px;
-  background: #000;
+  background: #171B1A;
 }
 
-h1.jumbo {
+.jumbo {
   font-size: 74px;
-  color: #17D694;
-  font-weight: 500;
-  margin-bottom: 160px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 76px;
 }
 
 .leapin {
   padding-top: 60px;
 }
 
-h2.quote {
-  font-weight: 700;
-  font-size: 60px;
-  color: #191D1C;
-  text-transform: uppercase;
-  line-height: 62px;
-  margin-top: -50px;
-}
-
 h2 {
   font-size: 48px;
-  color: #17D694;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 h3 {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 h4 {
@@ -91,6 +77,11 @@ p {
 p.lead {
   font-size: 22px;
   line-height: 31px;
+  text-align: center;
+}
+
+p.small {
+  font-size: 16px;
 }
 
 a {
@@ -102,23 +93,34 @@ a[href^=mailto] {
   color: #17D694;
 }
 
+.center {
+  text-align: center;
+}
+
 .field {
   width: 100%;
-  background: #F7FAF9;
+  background: #23352F;
   font-size: 17px;
-  color: #C2C9C7;
+  font-weight: 400;
+  color: #3A866C;
   line-height: 26px;
-  padding: 12px 18px;
+  padding: 15px 18px 12px 18px;
   border: none;
   margin-bottom: 20px;
 }
 
+.field::-webkit-input-placeholder {
+  color: #3A866C;
+  font-weight: 400;
+}
+
 .btn {
-  background: #17D694;
-  font-weight: 700;
+  background: #3A866C;
+  font-weight: 600;
   font-size: 16px;
-  color: #FFFFFF;
-  padding: 14px 24px;
+  border-radius: 0px;
+  color: #171B1A;
+  padding: 15px 18px 12px 18px;
 }
 
 .circle {
@@ -139,12 +141,18 @@ a[href^=mailto] {
   flex-direction: row;
 }
 
+.circle p {
+  font-weight: 500;
+  line-height: 23px;
+  margin-top: 10px;
+}
+
 .white {
   background-color: #fff;
 }
 
 .green {
-  color: #17D694;
+  color: #3A866C;
 }
 
 .floater {
@@ -161,11 +169,15 @@ a[href^=mailto] {
 }
 
 .green-bg {
-  background-color: #17D694;
+  background-color: #3A866C;
 }
 
 .black {
-  color: #191D1C;
+  color: #171B1A;
+}
+
+.black-bg {
+  background-color: #171B1A;
 }
 
 .beige {
@@ -173,8 +185,11 @@ a[href^=mailto] {
 }
 
 .dark-gray {
+  color: #646967;
+}
 
-  color: #6B7371;
+.gray {
+  color: #ACB4B2;
 }
 
 .copyright {
