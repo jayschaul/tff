@@ -45,8 +45,7 @@
     var duration = Math.floor(Math.random() * 200) + 400;
     setTimeout(function() {
       img.style.transform ='scale('+finalScale+') translate3d('+x+'px, '+y+'px, 0px)';
-      img.style.transition = 'filter 1s linear, transform ' + duration + 's linear, opacity '+opacityDuration+'s linear';
-      img.style.filter = 'blur(0px)';
+      img.style.transition = 'transform ' + duration + 's linear, opacity '+opacityDuration+'s linear';
       img.style.opacity = 1;
     }, 100);
     setTimeout(function() {

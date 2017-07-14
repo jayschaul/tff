@@ -2,7 +2,7 @@
   var containers = document.querySelectorAll('.container-fluid');
   for (var i = 0; i < containers.length; i++) {
     var container = containers[i];
-    container.style.height = window.innerHeight + 'px';
+    // container.style.height = window.innerHeight + 'px';
   }
 
 
