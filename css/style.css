@@ -17,7 +17,7 @@ header {
 }
 
 header.scrolled {
-  background-color: #171B1A;
+  background-color: rgba(23,27,26,1);
 }
 
 #fader-barely-know-her {
@@ -28,7 +28,7 @@ header.scrolled {
   right: 0px;
   bottom: 0px;
   z-index: 1001;
-  opacity: 0.7;
+  opacity: 0.55;
 }
 
 .point {
@@ -104,6 +104,7 @@ h4 {
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-weight: 400;
 }
 
 strong {
@@ -119,6 +120,7 @@ p.lead {
   font-size: 22px;
   line-height: 31px;
   text-align: center;
+  font-weight: 400;
 }
 
 p.small {
@@ -196,6 +198,7 @@ a[href^=mailto] {
 
 .img-fluid {
   width: 100%;
+  height: auto;
 }
 
 .circle {
@@ -296,13 +299,66 @@ textarea:focus, input:focus{
   color: #171B1A;
 }
 
-@media screen and (max-width: 414px) {
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (max-width: 1200px) {
+}
+
+
+/*Large devices (desktops, 992px and up)*/
+@media (max-width: 992px) {
+
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (max-width: 768px) {
+  .jumbo, h2 {
+    font-size: 60px;
+    line-height: 64px;
+  }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) {
   .page {
     border-left: 0px;
     border-right: 0px;
   }
+  .jumbo, h2 {
+    font-size: 42px;
+    line-height: 50px;
+  }
+  .field {
+    font-size: 19px;
+    color: #646967;
+    line-height: 26px;
+    padding: 15px 18px 10px 0px;
+    border-bottom: 2px solid #646967;
+  }
+  header.scrolled {
+    background-color: rgba(23,27,26,0.97);
+    border-bottom: 2px solid #3A866C;
+  }
 }
 
+/*Small devices (landscape phones, 320px and up)*/
+@media (max-width: 320px) {
+  .page {
+    border-left: 0px;
+    border-right: 0px;
+  }
+  .jumbo {
+    font-size: 38px;
+    line-height: 40px;
+  }
+  p.lead {
+    font-size: 19px;
+    line-height: 26px;
+  }
+}
+
+
+/*2x assets*/
 @media
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
