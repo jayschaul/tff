@@ -11,6 +11,6 @@
       header.className = '';
     }
 
-    fader.style.opacity = offset / height;
+    fader.style.opacity = (0.7 + (offset / height * 0.3));
   })
 }());
