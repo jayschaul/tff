@@ -1,7 +1,8 @@
 (function() {
   var header = document.querySelector('header');
+  var fader = document.getElementById('fader-barely-know-her');
   var container = document.querySelectorAll('.container-fluid')[1];
-  var height = container.offsetHeight;
+  var height = container.offsetHeight - 100;
   window.addEventListener('scroll', function() {
     var offset = window.pageYOffset;
     if (offset > height) {
@@ -9,5 +10,7 @@
     } else {
       header.className = '';
     }
+
+    fader.style.opacity = offset / height;
   })
 }());

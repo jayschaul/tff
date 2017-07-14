@@ -3,8 +3,10 @@
     {x: -3400, y: -4},
     {x: 700, y: 3000},
     {x: 4000, y: 43},
+    {x: -800, y: -3234},
     {x: -800, y: 2400},
-    {x: 2000, y: -2000},
+    {x: 300, y: 4000},
+    {x: 2000, y: -2000}
   ];
   var zIndex = 1000;
   var interval = 1200;
@@ -43,7 +45,8 @@
     var duration = Math.floor(Math.random() * 200) + 400;
     setTimeout(function() {
       img.style.transform ='scale('+finalScale+') translate3d('+x+'px, '+y+'px, 0px)';
-      img.style.transition = 'transform ' + duration + 's linear, opacity '+opacityDuration+'s linear';
+      img.style.transition = 'filter 1s linear, transform ' + duration + 's linear, opacity '+opacityDuration+'s linear';
+      img.style.filter = 'blur(0px)';
       img.style.opacity = 1;
     }, 100);
     setTimeout(function() {
