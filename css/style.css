@@ -32,7 +32,6 @@ header.scrolled {
 }
 
 .point {
-  filter: blur(150px);
   position: absolute;
   left: 50%;
   top: 50%;
