@@ -12,6 +12,24 @@ header {
   position: fixed;
   width: 100%;
   top: 60px;
+  z-index: 1002;
+}
+
+.point {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+}
+
+#top {
+  position: relative;
+  overflow: hidden;
+}
+
+.on-the-top  {
+  z-index: 1001;
+  position: relative;
 }
 
 header.scrolled {
@@ -108,7 +126,7 @@ a[href^=mailto] {
 }
 
 .logo {
-  background-image: url('/images/tff-logo.png');
+  background-image: url('../images/tff-logo.png');
   background-size: cover;
   height: 58px;
   width: 104px;
@@ -237,7 +255,7 @@ a[href^=mailto] {
 }
 
 .invoices {
-  background-image: url('/images/invoices.png');
+  background-image: url('../images/invoices.png');
   background-size: cover;
   height: 732px;
   width: 668px;
@@ -272,9 +290,9 @@ textarea:focus, input:focus{
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
   .logo {
-    background-image: url('/images/tff-logo@2x.png');
+    background-image: url('../images/tff-logo@2x.png');
   }
   .invoices {
-    background-image: url('/images/invoices@2x.png');
+    background-image: url('../images/invoices@2x.png');
   }
 }
