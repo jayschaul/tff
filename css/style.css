@@ -7,6 +7,7 @@ body {
   padding: 0px;
   margin: 0px;
   font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 header {
@@ -16,7 +17,6 @@ header {
 }
 
 .page {
-  background: #fff;
   border-left: 20px solid #171B1A;
   border-right: 20px solid #171B1A;
 }
@@ -45,10 +45,6 @@ footer {
   line-height: 76px;
 }
 
-.leapin {
-  padding-top: 60px;
-}
-
 h2 {
   font-size: 48px;
   font-weight: 400;
@@ -56,7 +52,7 @@ h2 {
 
 h3 {
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 h4 {
@@ -86,11 +82,15 @@ p.small {
 
 a {
   text-decoration: underline;
-  color: #fff;
+  color: #3A866C;
+}
+
+a:active {
+  color: #ACB4B2;
 }
 
 a[href^=mailto] {
-  color: #17D694;
+  color: #3A866C;
 }
 
 .center {
@@ -130,6 +130,18 @@ a[href^=mailto] {
   padding: 15px 18px 12px 18px;
 }
 
+.btn:hover, .btn:active, .btn:focus {
+  color: #171B1A;
+}
+
+.btn:hover {
+  color: #171B1A;
+}
+
+.btn:focus {
+  outline: none;
+}
+
 .circle {
   border-radius: 50%;
   height: 0px;
@@ -149,17 +161,9 @@ a[href^=mailto] {
 }
 
 .circle p {
-  font-weight: 500;
+  font-weight: 600;
   line-height: 23px;
   margin-top: 10px;
-}
-
-.white {
-  background-color: #fff;
-}
-
-.green {
-  color: #3A866C;
 }
 
 .floater {
@@ -173,6 +177,10 @@ a[href^=mailto] {
 
 .height100 {
   height: 100%;
+}
+
+.green {
+  color: #3A866C;
 }
 
 .green-bg {
@@ -199,8 +207,44 @@ a[href^=mailto] {
   color: #ACB4B2;
 }
 
+.gray-bg {
+  background-color: #ACB4B2;
+}
+
 .copyright {
   margin-top: 50px;
+}
+
+.invoices {
+  background-image: url('/images/invoices.png');
+  background-size: cover;
+  height: 732px;
+  width: 668px;
+}
+
+.sub-footer {
+  opacity: 0.5;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+::selection {
+  background: rgba(58, 134, 109, 0.9);
+  color: #171B1A;
+}
+
+::-moz-selection {
+  background: rgba(58, 134, 109, 0.9);
+  color: #171B1A;
+}
+
+@media screen and (max-width: 414px) {
+  .page {
+    border-left: 0px;
+    border-right: 0px;
+  }
 }
 
 @media
@@ -208,5 +252,8 @@ a[href^=mailto] {
 (min-resolution: 192dpi) {
   .logo {
     background-image: url('/images/tff-logo@2x.png');
+  }
+  .invoices {
+    background-image: url('/images/invoices@2x.png');
   }
 }
