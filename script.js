@@ -11,7 +11,6 @@
     var image = new Image()
     image.src = 'images/freelancer-' + i + '.jpg';
     images.push(image);
-    console.log(drawPoint(100, i, 6));
   }
 
   function drawPoint(r, currentPoint, totalPoints) {
@@ -23,6 +22,5 @@
 
     return {x: x, y: y}
   }
-
 }());
 

@@ -40,12 +40,15 @@
   function animateImage(img, points) {
     var x = points[1].x - points[0].x;
     var y = points[1].y - points[0].y;
-    var duration = Math.floor(Math.random() * 20) + 400;
+    var duration = Math.floor(Math.random() * 200) + 400;
     setTimeout(function() {
       img.style.transform ='scale('+finalScale+') translate3d('+x+'px, '+y+'px, 0px)';
       img.style.transition = 'transform ' + duration + 's linear, opacity '+opacityDuration+'s linear';
       img.style.opacity = 1;
     }, 100);
+    setTimeout(function() {
+      img.remove();
+    }, duration * 100);
   }
 
   function drawImage(i, image) {
