@@ -13,6 +13,7 @@ header {
   width: 100%;
   top: 60px;
   z-index: 1002;
+  transition-duration: 0.3;
 }
 
 .point {
@@ -33,12 +34,19 @@ header {
 }
 
 header.scrolled {
-  background-color: red;
+  background-color: #171B1A;
+  padding-top: 20px;
+  top: 0px;
+}
+
+.container-fluid {
+  min-height: 600px;
 }
 
 header .container-fluid {
   height: 100px !important;
 }
+
 
 .page {
   border-left: 20px solid #171B1A;
