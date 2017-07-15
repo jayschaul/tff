@@ -310,6 +310,10 @@ a[href^=mailto] {
   width: 668px;
 }
 
+.whos-in h3 {
+  margin-top: 12px;
+}
+
 .sub-footer {
   opacity: 0.5;
 }
@@ -331,12 +335,25 @@ textarea:focus, input:focus{
 
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (max-width: 1200px) {
+  .circle p {
+    line-height: 17px;
+    font-size: 16px;
+  }
 }
 
 
 /*Large devices (desktops, 992px and up)*/
 @media (max-width: 992px) {
+  .circle p {
+    line-height: 24px;
+    font-size: 22px;
+  }
+}
 
+@media (min-width: 992px) and (max-width: 1200px) {
+  .jumbo {
+    font-size: 68px;
+  }
 }
 
 /*Medium devices (tablets, 768px and up)*/
@@ -367,6 +384,10 @@ textarea:focus, input:focus{
   header.scrolled {
     background-color: rgba(23,27,26,0.97);
     border-bottom: 2px solid #3A866C;
+  }
+  .circle p {
+    line-height: 21px;
+    font-size: 19px;
   }
 }
 
