@@ -320,19 +320,19 @@ a[href^=mailto] {
 
 #roll-bar {
   position: relative;
-  overflow: hidden;
-  height: 320px;
+  height: 440px;
   width: 100%;
+  margin-top: 150px;
 }
 
 .roll {
-  animation: roll 30s infinite linear;
+  animation: roll 100s infinite linear;
 }
 
 .sized {
-  width: 200px;
+  width: 250px;
   height: 0px;
-  padding-top: 200px;
+  padding-top: 250px;
 }
 
 .roller {

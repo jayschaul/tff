@@ -39,4 +39,4 @@ function appendShape() {
 
 setInterval(function() {
   appendShape()
-}, 2600);
+}, 2800);
