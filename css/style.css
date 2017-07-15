@@ -344,17 +344,10 @@ a[href^=mailto] {
   transition: transform 18s linear;
 }
 
-
 @keyframes roll {
   from { transform: rotateZ(0deg) }
   to { transform: rotateZ(-360deg) }
 }
-
-.roll-baby {
-  transform: translate3d(-2000px, 0px, 0px);
-  transition: transform 18s linear;
-}
-
 
 .sub-footer {
   opacity: 0.5;

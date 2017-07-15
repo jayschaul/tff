@@ -29,7 +29,7 @@ var i = 0;
 var items = [shape1(), shape2(), shape3(), shape4(), shape5(), shape6()];
 function appendShape() {
   var item = items[i % items.length].cloneNode(true);
-  item.style.right = '-300px';
+  item.style.right = '-350px';
   elem.appendChild(item);
   setTimeout(function() {
     item.className += ' roll-baby';
