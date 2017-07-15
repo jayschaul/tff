@@ -318,6 +318,10 @@ a[href^=mailto] {
   margin-top: 12px;
 }
 
+.whos-in {
+  overflow: hidden;
+}
+
 #roll-bar {
   position: relative;
   height: 440px;
