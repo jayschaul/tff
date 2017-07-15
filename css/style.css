@@ -318,6 +318,44 @@ a[href^=mailto] {
   margin-top: 12px;
 }
 
+#roll-bar {
+  position: relative;
+  overflow: hidden;
+  height: 320px;
+  width: 100%;
+}
+
+.roll {
+  animation: roll 30s infinite linear;
+}
+
+.sized {
+  width: 200px;
+  height: 0px;
+  padding-top: 200px;
+}
+
+.roller {
+  position: absolute;
+}
+
+.roll-baby {
+  transform: translate3d(-2000px, 0px, 0px);
+  transition: transform 18s linear;
+}
+
+
+@keyframes roll {
+  from { transform: rotateZ(0deg) }
+  to { transform: rotateZ(-360deg) }
+}
+
+.roll-baby {
+  transform: translate3d(-2000px, 0px, 0px);
+  transition: transform 18s linear;
+}
+
+
 .sub-footer {
   opacity: 0.5;
 }

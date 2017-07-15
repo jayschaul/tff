@@ -163,49 +163,55 @@
             <div class="col-lg-12">
               <h2 class="black" style="padding-bottom: 50px;">Who's in?</h2>
             </div>
-            <div class="col-lg-3 col-sm-6 text-center">
-              <div class="circle black-bg" style="margin-bottom: 20px;">
-                <div style="align-items:center;">
-                  <h3 class="gray" style="flex:1;">Art<br />Directors</h3>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 text-center">
-              <div class="circle black-bg" style="margin-bottom: 20px; background: #294E41; border-radius: 0px; -webkit-clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%); clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);">
-                <div style="align-items:center;">
-                  <h3 class="gray" style="flex:1;">Designers</h3>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 text-center">
-              <div class="circle black-bg" style="margin-bottom: 20px;">
-                <div style="align-items:center;">
-                  <h3 class="gray" style="flex:1;">Creative<br />Directors</h3>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 text-center">
-              <div class="circle black-bg" style="margin-bottom: 20px; background: #23352F; border-radius: 0px;">
-                <div style="align-items:center;">
-                  <h3 class="gray" style="flex:1;">Copywriters</h3>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 text-center">
-              <div class="circle black-bg" style="margin-bottom: 20px; background: #294E41; border-radius: 0px; -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%); clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);">
-                <div style="align-items:center;">
-                  <h3 class="gray" style="flex:1;">Developers</h3>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 text-center">
-              <div class="circle black-bg" style="margin-bottom: 20px; border-radius: 0px;">
-                <div style="align-items:center;">
-                  <h3 class="gray" style="flex:1;">Photographers</h3>
-                </div>
-              </div>
+            <div id="roll-bar">
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- shapes -->
+    <div class="hidden">
+      <div class="circle roller sized" id="shape1">
+        <div class="circle sized black-bg roll">
+        </div>
+        <div style="align-items:center;">
+          <h3 class="gray" style="flex:1;">Art<br />Directors</h3>
+        </div>
+      </div>
+      <div class="circle roller sized" id="shape2">
+        <div class="circle black-bg sized roll" style="background: #294E41; border-radius: 0px; -webkit-clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%); clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);">
+        </div>
+        <div style="align-items:center;">
+          <h3 class="gray" style="flex:1;">Designers</h3>
+        </div>
+      </div>
+      <div class="circle roller sized" id="shape3">
+        <div class="circle black-bg sized roll">
+        </div>
+        <div style="align-items:center;">
+          <h3 class="gray" style="flex:1;">Creative<br />Directors</h3>
+        </div>
+      </div>
+      <div class="circle roller sized" id="shape4">
+        <div class="circle black-bg sized roll" style="background: #23352F; border-radius: 0px;">
+        </div>
+        <div style="align-items:center;">
+          <h3 class="gray" style="flex:1;">Copywriters</h3>
+        </div>
+      </div>
+      <div class="circle roller sized" id="shape5">
+        <div class="circle black-bg sized roll" style="background: #294E41; border-radius: 0px; -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%); clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);">
+        </div>
+        <div style="align-items:center;">
+          <h3 class="gray" style="flex:1;">Developers</h3>
+        </div>
+      </div>
+      <div class="circle roller sized" id="shape6">
+        <div class="circle black-bg sized roll" style="border-radius: 0px;">
+        </div>
+        <div style="align-items:center;">
+          <h3 class="gray" style="flex:1;">Photographers</h3>
         </div>
       </div>
     </div>
@@ -294,8 +300,9 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
-  <script src="move_the_images.js"></script>
-  <script src="header.js"></script>
+  <script src="scripts/script.js"></script>
+  <script src="scripts/move_the_images.js"></script>
+  <script src="scripts/header.js"></script>
+  <script src="scripts/roller.js"></script>
 </body>
 </html>
