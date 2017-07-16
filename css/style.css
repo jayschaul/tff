@@ -418,6 +418,11 @@ textarea:focus, input:focus{
   .section-img {
     padding-bottom: 100px;
   }
+  header.scrolled {
+    background-color: rgba(23,27,26,0.99);
+    border-bottom: 1px solid #3A866C;
+    transition: all ease-in 0.1s;
+  }
 }
 
 /*Small devices (landscape phones, 576px and up)*/
@@ -427,8 +432,12 @@ textarea:focus, input:focus{
     border-right: 0px;
   }
   .jumbo, h2 {
-    font-size: 42px;
+    font-size: 48px;
     line-height: 50px;
+  }
+  p.lead {
+    font-size: 19px;
+    line-height: 26px;
   }
   .field {
     font-size: 19px;
@@ -437,10 +446,6 @@ textarea:focus, input:focus{
     padding: 15px 18px 10px 0px;
     border-bottom: 2px solid #646967;
   }
-  header.scrolled {
-    background-color: rgba(23,27,26,0.97);
-    border-bottom: 2px solid #3A866C;
-  }
   .circle p {
     line-height: 21px;
     font-size: 19px;
@@ -448,7 +453,24 @@ textarea:focus, input:focus{
   .section-img {
     padding-bottom: 100px;
   }
+  #roll-bar {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    margin-top: 50px;
+  }
+  .whos-in {
+    min-height: 700px;
+  }
 }
+
+@media (max-width: 375px) {
+  .jumbo, h2 {
+    font-size: 48px;
+    line-height: 50px;
+  }
+}
+
 
 /*Small devices (landscape phones, 320px and up)*/
 @media (max-width: 320px) {

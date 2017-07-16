@@ -5,7 +5,7 @@
   var height = container.offsetHeight - 100;
   window.addEventListener('scroll', function() {
     var offset = window.pageYOffset;
-    if (offset > height) {
+    if (offset > height - 800) {
       header.className = 'scrolled';
     } else {
       header.className = '';
