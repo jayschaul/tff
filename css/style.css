@@ -16,6 +16,10 @@ header {
   z-index: 1002;
 }
 
+header .logo {
+  transition: all ease 0.2s;
+}
+
 header.scrolled {
   /*background-color: rgba(23,27,26,1);*/
 }
@@ -421,7 +425,19 @@ textarea:focus, input:focus{
   header.scrolled {
     background-color: rgba(23,27,26,0.99);
     border-bottom: 1px solid #3A866C;
-    transition: all ease-in 0.1s;
+    transition: all ease 0.15s;
+    height: 72px !important;
+  }
+  header.scrolled .logo {
+    transform: scale(0.7);
+    transform-origin: top left;
+    transition: all ease 0.2s;
+    margin-top: -5px;
+  }
+  header.scrolled h4 {
+    margin-top: 5px;
+    padding-top: 0px !important;
+    transition: all ease 0.2s;
   }
 }
 
