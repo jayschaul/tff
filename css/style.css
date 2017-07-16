@@ -332,7 +332,7 @@ a[href^=mailto] {
 
 #roll-bar {
   position: relative;
-  height: 440px;
+  height: 400px;
   width: 100%;
   margin-top: 150px;
 }
