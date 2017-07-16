@@ -425,7 +425,6 @@ textarea:focus, input:focus{
   }
   header.scrolled {
     background-color: rgba(23,27,26,0.99);
-    border-bottom: 1px solid #3A866C;
     height: 72px !important;
   }
   header.scrolled .logo {
