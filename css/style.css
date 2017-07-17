@@ -183,6 +183,34 @@ a[href^=mailto] {
   color: #3A866C;
 }
 
+a.cta-text-link {
+  text-decoration: none;
+  border-bottom: 2px solid rgba(58,134,108,0.4);
+}
+
+a.btn:visted {
+  color: #171B1A;
+}
+
+a.cta-text-link:visited {
+  color: #3A866C;
+}
+
+a.cta-text-link:hover {
+  color: #3A866C;
+  border-bottom: 2px solid rgba(58,134,108,1);
+}
+
+a.cta-text-link.gray {
+  text-decoration: none;
+  border-bottom: 2px solid rgba(172,180,178,0.4);
+}
+
+a.cta-text-link.gray:hover {
+  border-bottom: 2px solid rgba(172,180,178,1);
+  color: rgba(172,180,178,1);
+}
+
 .center {
   text-align: center;
 }
