@@ -73,6 +73,7 @@ header.scrolled h4 {
 
 .no-min {
   min-height: inherit;
+  height: auto !important;
 }
 
 .section-copy {
