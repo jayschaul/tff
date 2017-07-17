@@ -275,6 +275,10 @@ input.field {
   padding: 100px 0px;
 }
 
+.launching-soon {
+  padding-top: 7px;
+}
+
 .btn:hover, .btn:active, .btn:focus {
   color: #171B1A;
 }
@@ -542,6 +546,13 @@ textarea:focus, input:focus{
   p.lead {
     font-size: 19px;
     line-height: 26px;
+  }
+  p {
+    font-size: 17px;
+    line-height: 22px;
+  }
+  .launching-soon {
+    padding-top: 0px;
   }
 }
 
