@@ -25,6 +25,20 @@ header h4 {
   transition: all ease 0.3s;
 }
 
+header.scrolled {
+  background-color: #171B1A;
+  height: 72px !important;
+}
+header.scrolled .logo {
+  transform: scale(0.7) translateX(-23px);
+  transform-origin: top;
+  margin-top: -4px;
+}
+header.scrolled h4 {
+  margin-top: 3px;
+  padding-top: 0px !important;
+}
+
 #fader-barely-know-her {
   background: #171B1A;
   position: absolute;
@@ -174,10 +188,10 @@ a[href^=mailto] {
 }
 
 .logo {
-  background-image: url('../images/tff-logo.png');
+  background-image: url('../images/tff-logo.svg');
   background-size: cover;
-  height: 58px;
-  width: 104px;
+  height: 56px;
+  width: 105px;
 }
 
 .field {
@@ -423,19 +437,6 @@ textarea:focus, input:focus{
   .section-img {
     padding-bottom: 100px;
   }
-  header.scrolled {
-    background-color: rgba(23,27,26,0.99);
-    height: 72px !important;
-  }
-  header.scrolled .logo {
-    transform: scale(0.7) translateX(-26px);
-    transform-origin: top;
-    margin-top: -5px;
-  }
-  header.scrolled h4 {
-    margin-top: 3px;
-    padding-top: 0px !important;
-  }
 }
 
 /*Small devices (landscape phones, 576px and up)*/
@@ -507,7 +508,7 @@ textarea:focus, input:focus{
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
   .logo {
-    background-image: url('../images/tff-logo@2x.png');
+    background-image: url('../images/tff-logo.svg');
   }
   .invoices {
     background-image: url('../images/invoices@2x.png');
