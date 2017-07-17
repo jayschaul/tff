@@ -5,22 +5,13 @@
     // container.style.height = window.innerHeight + 'px';
   }
 
-
-  var images = [];
-  for (var i = 1; i <= 6; i++) {
-    var image = new Image()
-    image.src = 'images/freelancer-' + i + '.jpg';
-    images.push(image);
-  }
-
-  function drawPoint(r, currentPoint, totalPoints) {
-    var theta = ((Math.PI * 2) / totalPoints);
-    var angle = (theta * currentPoint);
-
-    var x = (100 * Math.cos(angle));
-    var y = (100 * Math.sin(angle));
-
-    return {x: x, y: y}
-  }
+  var $ctas = $('.cta');
+  var $join = $('#join');
+  $(document).ready(function() {
+    $ctas.bind('click', function(e) {
+      e.preventDefault();
+      $('html, body').animate({ scrollTop: $join.offset().top }, 500);
+    });
+  });
 }());
 
