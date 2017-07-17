@@ -29,14 +29,20 @@ header.scrolled {
   background-color: #171B1A;
   height: 72px !important;
 }
+
 header.scrolled .logo {
   transform: scale(0.7) translateX(-23px);
   transform-origin: top;
   margin-top: -4px;
 }
+
 header.scrolled h4 {
   margin-top: 3px;
   padding-top: 0px !important;
+}
+
+.terms .page {
+  padding-top: 200px;
 }
 
 #fader-barely-know-her {
