@@ -1,5 +1,5 @@
 (function() {
-  var containers = document.querySelectorAll('.container-fluid');
+  var containers = document.querySelectorAll('#top');
   for (var i = 0; i < containers.length; i++) {
     var container = containers[i];
     container.style.height = window.innerHeight + 'px';

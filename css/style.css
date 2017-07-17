@@ -236,6 +236,10 @@ a.cta-text-link.gray:hover {
   border-bottom: 2px solid #646967;
 }
 
+input.field {
+  border-radius: 0px;
+}
+
 .field:valid {
   border-bottom: 2px solid white;
   color: white;
@@ -259,6 +263,10 @@ a.cta-text-link.gray:hover {
 
 #top a {
   display: inline-block;
+}
+
+#join {
+  padding: 100px 0px;
 }
 
 .btn:hover, .btn:active, .btn:focus {
