@@ -10,8 +10,7 @@
     <link rel="icon" type="image/png" href="../images/favicon.png">
 
     <meta name="viewport" content="width=device-width">
-    <meta name="keywords" content="the freelance fund">
-    <meta property="og:title" content="The Freelance Fund" />
+    <meta name="keywords" content="the freelance fund"> <meta property="og:title" content="The Freelance Fund" />
     <meta property="og:description" content="Introducing a little peace of mind for freelancers." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://thefreelancefund.com" />
@@ -256,7 +255,7 @@ clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);">
 
     <div class="container black-bg vertical-center" id="join">
       <div class="row">
-        <div class="container">
+        <div class="container" id="form-container">
           <div class="row">
             <div class="col-sm-8 col-sm-offset-2  col-lg-6 col-lg-offset-3">
               <h2 class="green jumbo">Join the<br />&mdash;waitlist.</h2>
@@ -269,7 +268,7 @@ clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);">
             </div>
             <div class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3" style="margin-top:70px;">
               <div class="row">
-                <form action="https://thefreelancefund.us16.list-manage.com/subscribe/post?u=144d4544ba7f71073991856e2&amp;id=37ea188f7b" method="post" class="validate" target="_blank" novalidate>
+                <form action="https://thefreelancefund.us16.list-manage.com/subscribe/post?u=144d4544ba7f71073991856e2&amp;id=37ea188f7b" method="post" class="validate" onsubmit="newsletter_footer_submitted=true" target="hidden-footer" novalidate>
                   <div class="col-md-6 col-sm-6">
                     <input name='FNAME' type="text" class="field" placeholder="first name" required />
                   </div>
@@ -334,10 +333,11 @@ clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);">
         </div>
       </div>
     </div>
-</div>
 
-<!--End mc_embed_signup-->
   </footer>
+
+  <script type="text/javascript">var newsletter_footer_submitted = false;</script>
+  <iframe id="hidden-footer" name="hidden-footer" onload="document.getElementById('form-container').className = 'container submitted';" style="display: none;"></iframe>
 
   <script src="https://code.jquery.com/jquery-latest.min.js"></script>
   <script src="scripts/script.js"></script>
