@@ -257,6 +257,22 @@ input.field {
   font-weight: 400;
 }
 
+.submitting input[type="submit"] {
+  display: none;
+}
+
+#form-container button {
+  display: none;
+}
+
+#form-container.submitting button {
+  display: block;
+}
+
+#form-container.submitted button {
+  display: none;
+}
+
 .btn {
   background: #3A866C;
   font-weight: 600;
