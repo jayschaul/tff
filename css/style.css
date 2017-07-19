@@ -267,6 +267,14 @@ input.field {
   text-decoration: none;
 }
 
+.email-submitted {
+  display: none;
+}
+
+.submitted .email-submitted {
+  display: block;
+}
+
 #top a {
   display: inline-block;
 }
