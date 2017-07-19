@@ -268,7 +268,7 @@ clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);">
             </div>
             <div class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3" style="margin-top:70px;">
               <div class="row">
-                <form action="https://thefreelancefund.us16.list-manage.com/subscribe/post?u=144d4544ba7f71073991856e2&amp;id=37ea188f7b" method="post" class="validate" target="hidden-footer" novalidate onsubmit="formSubmitted=true">
+                <form action="https://thefreelancefund.us16.list-manage.com/subscribe/post?u=144d4544ba7f71073991856e2&amp;id=37ea188f7b" method="post" class="validate" target="hidden-footer" novalidate onsubmit="formSubmitted=true;document.getElementById('form-container').className = 'container submitting'">
                   <div class="col-md-6 col-sm-6">
                     <input name='FNAME' type="text" class="field" placeholder="first name" required />
                   </div>
@@ -280,8 +280,13 @@ clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);">
                   </div>
                   <div class="col-md-12 col-sm-12">
                     <input type="submit" class="btn" style="width:100%; margin-top: 30px;" value="Join Waitlist" />
+                    <button class="btn" style="width:100%; margin-top: 30px;" onclick="return false;">Joining...</button>
                   </div>
                 </form>
+                <div class="col-md-12 col-sm-12 email-submitted text-center">
+                  <br /><br />
+                  <p class="green">&#10004;&#xFE0E; Thanks for signing up! We'll be in touch.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -295,7 +300,7 @@ clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-          <p class="dark-gray"><strong>The Freelance Fund</strong></p>
+          <p class="dark-gray">The Freelance Fund</p>
           <p class="dark-gray"><strong>&mdash;</strong></p>
         </div>
         <div class="col-xs-12 col-sm-5 col-md-6 col-lg-4 col-lg-offset-2 pull-left">
@@ -309,14 +314,14 @@ clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);">
       <div class="row">
         <div class="col-md-3 col-lg-3">
           <p class="small">
-            <a class="dark-gray" href="/terms">Terms &amp; Privacy</a><br />
+            <a class="dark-gray" href="#">Twitter</a><br />
+            <a class="dark-gray" href="#">Instagram</a><br />
+            <a class="dark-gray" href="#">Facebook</a>
           </p>
         </div>
         <div class="col-md-3 col-lg-3">
           <p class="small">
-            <a class="dark-gray" href="#">Twitter</a><br />
-            <a class="dark-gray" href="#">Instagram</a><br />
-            <a class="dark-gray" href="#">Facebook</a>
+            <a class="dark-gray" href="/terms">Terms &amp; Privacy</a><br />
           </p>
         </div>
       </div>
