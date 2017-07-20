@@ -587,6 +587,10 @@ textarea:focus, input:focus{
   #top.container-fluid {
     min-height: auto;
   }
+  /* 1 of 3 Padding to push down headline copy on bigger phones */
+  h1.jumbo {
+    padding-top: 60px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -594,6 +598,7 @@ textarea:focus, input:focus{
     font-size: 48px;
     line-height: 50px;
   }
+  /* 2 of 3 Padding to push down headline copy on bigger phones */
   h1.jumbo {
     font-size: 42px;
     line-height: 44px;
@@ -618,6 +623,10 @@ textarea:focus, input:focus{
   p {
     font-size: 17px;
     line-height: 22px;
+  }
+  /* 3 of 3 Padding to push down headline copy on bigger phones */
+  h1.jumbo {
+    padding-top: 120px;
   }
 }
 
