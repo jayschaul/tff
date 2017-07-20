@@ -580,6 +580,9 @@ textarea:focus, input:focus{
   .whos-in {
     min-height: 700px;
   }
+  #top.container-fluid {
+    min-height: auto;
+  }
 }
 
 @media (max-width: 375px) {
