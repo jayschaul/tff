@@ -124,7 +124,7 @@ footer {
 }
 
 .jumbo {
-  font-size: 74px;
+  font-size: 72px;
   font-weight: 400;
   margin-bottom: 20px;
   text-align: center;
@@ -553,6 +553,10 @@ textarea:focus, input:focus{
     font-size: 48px;
     line-height: 50px;
   }
+  h1.jumbo {
+    font-size: 50px;
+    line-height: 50px;
+  }
   p.lead {
     font-size: 19px;
     line-height: 26px;
@@ -590,6 +594,10 @@ textarea:focus, input:focus{
     font-size: 48px;
     line-height: 50px;
   }
+  h1.jumbo {
+    font-size: 42px;
+    line-height: 44px;
+  }
 }
 
 
@@ -604,15 +612,12 @@ textarea:focus, input:focus{
     line-height: 40px;
   }
   p.lead {
-    font-size: 19px;
+    font-size: 17px;
     line-height: 26px;
   }
   p {
     font-size: 17px;
     line-height: 22px;
-  }
-  .launching-soon {
-    padding-top: 0px;
   }
 }
 
